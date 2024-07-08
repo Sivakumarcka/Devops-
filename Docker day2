@@ -1,0 +1,44 @@
+Docker Image:
+1. Combination of binaries and libraries which are necessary for the software application. 
+All the docker images by default available in the hub.docker.com ( public registry)
+
+Docker container:
+1. Running instance of an image is called a container. Any number of containers can be created from one docker image.
+
+Docker client:
+1. This is a process responsible for accepting docker commands from user and pass it to a background process called docker daemon.
+
+
+Docker daemon:
+1. This is responsible for accepting the docker commands from the docker client and route them to docker images or containers or docker registry.
+
+
+Docker Registry:
+1. Location where docker images can be preserved.
+Categorized into two types:
+  
+1. Public registry ( hub.docker.com) this is maintained by docker community
+2. Private registry ( Jfrog or nexus ) this is maintained within organization
+Docker Host:
+1. Windows or linux or mac irrespective of operating system , where my docker is installed is called docker host
+
+IMPORTANT DOCKER COMMANDS:
+
+Working on docker images:
+
+1. Download a docker image
+# docker pull image_name
+2. Upload a image 
+# docker push image_name
+3. List the images
+# docker images 
+4. Delete the image
+# docker rmi image_name/image_ID
+5. Search for docker image
+# docker search image_name
+6. Create a docker image from a customized container
+# docker commit container_name/container_id
+7. Create a docker image from dockerfile
+# docker build -t image_name
+8. Delete unused images
+# docker prune -a
